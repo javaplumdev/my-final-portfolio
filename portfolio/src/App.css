@@ -64,3 +64,7 @@ span {
 .projects {
 	margin-top: 10em;
 }
+
+.project {
+	width: 320px;
+}

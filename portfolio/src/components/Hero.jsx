@@ -7,8 +7,8 @@ const Hero = () => {
 		<>
 			<div className="hero-page">
 				<h1 className="display-4 fw-bold text-center ">
-					Brings performance <span>experience</span> and modern looking{' '}
-					<span>user interfaces </span>
+					Brings performance <span>experience</span> and nice looking{' '}
+					<span>user interfaces</span>.
 				</h1>
 				<button className="button my-5 mb-5">Send a message</button>
 

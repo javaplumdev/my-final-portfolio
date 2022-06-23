@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import Projects from './Projects';
+import Blog from './Blog';
 // Bootstrap
 import { Container } from 'react-bootstrap';
 
@@ -13,6 +14,7 @@ const ContentHolder = () => {
 				<Navbar />
 				<Hero />
 				<Projects />
+				<Blog />
 			</Container>
 		</>
 	);
