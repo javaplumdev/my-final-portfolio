@@ -5,7 +5,7 @@ import { RecentProjects } from '../data/Data.js';
 import { ProjectsData } from '../data/Data.js';
 // React Router
 import { Link } from 'react-router-dom';
-import Raycast from '../assets/raycast-untitled.png';
+
 import { Col, Row } from 'react-bootstrap';
 
 const Projects = () => {
@@ -42,18 +42,6 @@ const Projects = () => {
 				<Link to="/projectpage">
 					<b className="d-flex justify-content-end">See all</b>
 				</Link>
-			</div>
-
-			<div
-				className="d-flex justify-content-around align-items-center"
-				style={{ marginTop: '8em' }}
-			>
-				<h2>Brings the code together</h2>
-
-				<img
-					src={Raycast}
-					style={{ maxWidth: '520px', borderRadius: '20px' }}
-				/>
 			</div>
 		</div>
 	);

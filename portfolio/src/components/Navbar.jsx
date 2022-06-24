@@ -17,11 +17,11 @@ const Navbar = () => {
 			animate="animate"
 			className="py-5 justify-content-between d-flex"
 		>
-			<Link to="/">
-				<b>Navbar brand</b>
+			<Link to="/" className="text-decoration-none">
+				<b>Charlito Mecarez Jr.</b>
 			</Link>
 
-			<Link to="/projectpage">
+			<Link to="/projectpage" className="text-decoration-none">
 				<p>projects</p>
 			</Link>
 

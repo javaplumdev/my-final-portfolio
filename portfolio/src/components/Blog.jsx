@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const Blog = () => {
 	return (
-		<div className="mt-5 ">
+		<div style={{ marginTop: '6em' }}>
 			<h1 className="fw-bold">Blogs</h1>
 
 			<Row>

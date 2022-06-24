@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Blog from './components/Blog';
 import ProjectPage from './components/ProjectPage';
 import ProjectContentPage from './components/ProjectContentPage';
+import About from './components/About';
 import Footer from './components/Footer';
 // Bootstrap
 import { Container } from 'react-bootstrap';
@@ -27,7 +28,9 @@ function App() {
 							element={
 								<>
 									<Hero />
+									<About />
 									<Projects />
+
 									<Blog />
 									<Footer />
 								</>

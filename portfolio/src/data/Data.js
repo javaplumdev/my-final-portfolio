@@ -27,62 +27,62 @@ import { v4 as uuidv4 } from 'uuid';
 export const ProjectsData = [
 	{
 		projectID: 1,
-		projectName: 'Crush me crush',
+		projectName: 'Freedomwall',
 		image: Group7,
 		image2: freedomwall,
 	},
 	{
 		projectID: 2,
-		projectName: 'Crush me crush',
+		projectName: 'Movie App',
 		image: Group6,
 		image2: movieapp,
 	},
 	{
 		projectID: 3,
-		projectName: 'Crush me crush',
+		projectName: 'E-Commerce website with react',
 		image: Group10,
 		image2: ecommerce,
 	},
 	{
 		projectID: 4,
-		projectName: 'Crush me crush',
+		projectName: 'COVID-19 Tracker',
 		image: Group2,
 		image2: covid,
 	},
 	{
 		projectID: 5,
-		projectName: 'Crush me crush',
+		projectName: 'Spend billionaires money',
 		image: Group3,
 		image2: spendmoney,
 	},
 	{
 		projectID: 6,
-		projectName: 'Crush me crush',
+		projectName: 'Pokemon Pokedex',
 		image: Group4,
 		image2: pokedex,
 	},
 	{
 		projectID: 7,
-		projectName: 'Crush me crush',
+		projectName: 'Music tap tap tap',
 		image: Group5,
 		image2: musictap,
 	},
 	{
 		projectID: 8,
-		projectName: 'Crush me crush',
+		projectName: 'Food application',
 		image: Group8,
 		image2: foodapp,
 	},
 	{
 		projectID: 9,
-		projectName: 'Crush me crush',
+		projectName: 'Are you bored?',
 		image: Group9,
 		image2: areubored,
 	},
 
 	{
 		projectID: 11,
-		projectName: 'Crush me crush',
+		projectName: 'Does your crush likes you too?',
 		image: Group1,
 		image2: crushme,
 	},
@@ -127,4 +127,18 @@ export const VlogData = [
 			'All of the pieces of information and knowledge I learned are pretty far from what I want to become. There are still a lot of holes that need to fill up. Last night, I finished this simple project where it will randomly generate your public information just by typing your name in the input box just for fun. I shared this project with my programming community and someone said that it was entertaining, I became happy at that point.',
 		link: 'https://medium.com/@carenzdelarosa/my-journey-as-a-third-year-bsit-student-3-18-2022-e26e61922f11',
 	},
+];
+
+export const Skills = [
+	{ image: 'https://img.icons8.com/color/344/html-5--v1.png' },
+	{ image: 'https://img.icons8.com/color/344/css3.png' },
+	{ image: 'https://img.icons8.com/color/344/javascript--v1.png' },
+	{ image: 'https://img.icons8.com/color/344/sass.png' },
+	{ image: 'https://img.icons8.com/color/344/bootstrap.png' },
+	{ image: 'https://img.icons8.com/color/344/react-native.png' },
+	{ image: 'https://img.icons8.com/color/344/npm.png' },
+	{ image: 'https://img.icons8.com/color/344/material-ui.png' },
+	{ image: 'https://img.icons8.com/color/344/firebase.png' },
+	{ image: 'https://img.icons8.com/color/344/git.png' },
+	{ image: 'https://img.icons8.com/ios-glyphs/344/github.png' },
 ];
