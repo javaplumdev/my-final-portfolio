@@ -68,14 +68,3 @@ span {
 .project {
 	width: 320px;
 }
-
-.proj-title {
-	position: relative;
-	max-width: 360px;
-}
-
-.proj-img {
-	position: absolute;
-	top: 15%;
-	z-index: -1;
-}
