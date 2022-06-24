@@ -26,7 +26,7 @@ const Hero = () => {
 				</div>
 			</div>
 			{/* animation */}
-			<motion.div
+			{/* <motion.div
 				className="circle"
 				animate={{ x: [0, 30, -50, 0], y: [0, 30, -50, 0] }}
 				transition={{
@@ -34,7 +34,7 @@ const Hero = () => {
 					repeat: Infinity,
 					repeatType: 'reverse',
 				}}
-			></motion.div>
+			></motion.div> */}
 		</>
 	);
 };
