@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Blog = () => {
 	return (
 		<div className="mt-5 ">
-			<h1 className="fw-bold">Blog</h1>
+			<h1 className="fw-bold">Blogs</h1>
 
 			<Row>
 				{VlogData.map((item) => {
@@ -25,7 +25,7 @@ const Blog = () => {
 								className=" text-decoration-none"
 							>
 								<div
-									className="mt-3 border p-3  shadow"
+									className="mt-3 rounded p-3  shadow"
 									style={{ maxWidth: '520px' }}
 								>
 									<p className="fw-bold">{item.vlogTitle}</p>

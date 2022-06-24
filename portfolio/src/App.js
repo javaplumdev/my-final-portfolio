@@ -12,30 +12,34 @@ import Footer from './components/Footer';
 import { Container } from 'react-bootstrap';
 // React Router
 import { Route, Routes } from 'react-router-dom';
+// Context
+import { ContextFunction } from './context/context-config';
 
 function App() {
 	return (
-		<div className="App">
-			<Container>
-				<Navbar />
-				<Routes>
-					<Route
-						path="/"
-						element={
-							<>
-								<Hero />
-								<Projects />
-								<Blog />
-								<Footer />
-							</>
-						}
-					/>
+		<ContextFunction>
+			<div className="App">
+				<Container>
+					<Navbar />
+					<Routes>
+						<Route
+							path="/"
+							element={
+								<>
+									<Hero />
+									<Projects />
+									<Blog />
+									<Footer />
+								</>
+							}
+						/>
 
-					<Route path="/projectpage" element={<ProjectPage />} />
-					<Route path="/projectpage/:id" element={<ProjectContentPage />} />
-				</Routes>
-			</Container>
-		</div>
+						<Route path="/projectpage" element={<ProjectPage />} />
+						<Route path="/projectpage/:id" element={<ProjectContentPage />} />
+					</Routes>
+				</Container>
+			</div>
+		</ContextFunction>
 	);
 }
 

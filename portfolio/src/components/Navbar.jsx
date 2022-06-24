@@ -1,10 +1,22 @@
 import React from 'react';
+// motion
+import { motion } from 'framer-motion';
 // React Router
 import { Link } from 'react-router-dom';
+// Context
+import { useContext } from 'react';
+import { ContextVariable } from '../context/context-config';
 
 const Navbar = () => {
+	const { AnimateHeroText } = useContext(ContextVariable);
+
 	return (
-		<div className="py-5  justify-content-between d-flex">
+		<motion.div
+			variants={AnimateHeroText}
+			initial="initial"
+			animate="animate"
+			className="py-5 justify-content-between d-flex"
+		>
 			<Link to="/">
 				<b>Navbar brand</b>
 			</Link>
@@ -14,7 +26,7 @@ const Navbar = () => {
 			</Link>
 
 			<p>contacts</p>
-		</div>
+		</motion.div>
 	);
 };
 
