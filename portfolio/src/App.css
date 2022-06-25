@@ -44,7 +44,7 @@ span {
 .button {
 	background-color: #00c3ff;
 	color: white;
-	padding: 1em;
+	padding: 0.5em;
 	border: none;
 	border-radius: 10px;
 	transition: 0.2s ease-in-out;

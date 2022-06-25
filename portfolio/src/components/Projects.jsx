@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 // Projects data
 import { RecentProjects } from '../data/Data.js';
@@ -6,14 +6,18 @@ import { ProjectsData } from '../data/Data.js';
 // React Router
 import { Link } from 'react-router-dom';
 
-import { Col, Row } from 'react-bootstrap';
-
 const Projects = () => {
 	return (
 		<div className="projects">
-			<div className="mb-5">
-				<h1 className="fw-bold">Recent projects</h1>
-				<p>Made with love.</p>
+			<div className="mb-3 d-flex align-items-center justify-content-between">
+				<div>
+					<h1 className="fw-bold">Recent projects</h1>
+					<p>Made with love.</p>
+				</div>
+
+				<Link to="/projectpage" className="text-decoration-none">
+					<b className="d-flex justify-content-end">See all</b>
+				</Link>
 			</div>
 
 			{/* Projects */}
@@ -24,7 +28,7 @@ const Projects = () => {
 							<motion.div
 								whileHover={{ scale: 1.1 }}
 								key={item.projectID}
-								className="m-3"
+								className="m-3 border p-4"
 								style={{ maxWidth: '320px' }}
 							>
 								<Link
@@ -33,15 +37,23 @@ const Projects = () => {
 								>
 									<img src={item.image} className="project w-100 " />
 									<p>{item.projectName}</p>
+									<div className="d-flex flex-wrap">
+										{item.tech.map((tech) => {
+											return (
+												<small
+													className="m-1 p-1 text-white rounded"
+													style={{ backgroundColor: '#00c3ff' }}
+												>
+													{tech}
+												</small>
+											);
+										})}
+									</div>
 								</Link>
 							</motion.div>
 						);
 					})}
 				</div>
-
-				<Link to="/projectpage">
-					<b className="d-flex justify-content-end">See all</b>
-				</Link>
 			</div>
 		</div>
 	);

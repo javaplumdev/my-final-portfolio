@@ -15,17 +15,21 @@ const Navbar = () => {
 			variants={AnimateHeroText}
 			initial="initial"
 			animate="animate"
-			className="py-5 justify-content-between d-flex"
+			className="py-3 justify-content-between d-flex"
 		>
 			<Link to="/" className="text-decoration-none">
 				<b>Charlito Mecarez Jr.</b>
 			</Link>
 
 			<Link to="/projectpage" className="text-decoration-none">
-				<p>projects</p>
+				<p>Projects</p>
 			</Link>
 
-			<p>contacts</p>
+			<Link to="/about" className="text-decoration-none">
+				<p>About</p>
+			</Link>
+
+			<p>Contacts</p>
 		</motion.div>
 	);
 };

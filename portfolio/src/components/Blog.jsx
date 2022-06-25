@@ -5,6 +5,8 @@ import { VlogData } from '../data/Data';
 import { Row, Col } from 'react-bootstrap';
 // Router
 import { Link } from 'react-router-dom';
+// Framer motion
+import { motion } from 'framer-motion';
 
 const Blog = () => {
 	return (
@@ -19,19 +21,21 @@ const Blog = () => {
 							key={item.vlogID}
 							className="d-flex justify-content-center"
 						>
-							<a
-								href={item.link}
-								target="_blank"
-								className=" text-decoration-none"
-							>
-								<div
-									className="mt-3 rounded p-3  shadow"
-									style={{ maxWidth: '520px' }}
+							<motion.div whileHover={{ scale: 1.1 }}>
+								<a
+									href={item.link}
+									target="_blank"
+									className=" text-decoration-none"
 								>
-									<p className="fw-bold">{item.vlogTitle}</p>
-									<p>{item.content.substring(0, 101)}...</p>
-								</div>
-							</a>
+									<div
+										className="mt-3 rounded p-3  shadow"
+										style={{ maxWidth: '520px' }}
+									>
+										<p className="fw-bold">{item.vlogTitle}</p>
+										<p>{item.content.substring(0, 101)}...</p>
+									</div>
+								</a>
+							</motion.div>
 						</Col>
 					);
 				})}

@@ -28,18 +28,17 @@ function App() {
 							element={
 								<>
 									<Hero />
-									<About />
 									<Projects />
-
 									<Blog />
-									<Footer />
 								</>
 							}
 						/>
 
+						<Route path="/about" element={<About />} />
 						<Route path="/projectpage" element={<ProjectPage />} />
 						<Route path="/projectpage/:id" element={<ProjectContentPage />} />
 					</Routes>
+					<Footer />
 				</Container>
 			</div>
 		</ContextFunction>

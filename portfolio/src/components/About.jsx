@@ -2,10 +2,23 @@ import React from 'react';
 import Raycast from '../assets/raycast-untitled.png';
 import { Skills } from '../data/Data';
 import { Row, Col } from 'react-bootstrap';
+// Context
+import { useContext } from 'react';
+import { ContextVariable } from '../context/context-config';
+import { motion } from 'framer-motion';
 
 const About = () => {
+	const { AnimateHeroText } = useContext(ContextVariable);
+
+	console.log(AnimateHeroText);
+
 	return (
-		<div style={{ marginTop: '10em' }}>
+		<motion.div
+			variants={AnimateHeroText}
+			initial="initial"
+			animate="animate"
+			style={{ marginTop: '2em' }}
+		>
 			<h1 className="fw-bold">About</h1>
 			<Row className="mt-5 d-flex justify-content-center ">
 				<Col md="6">
@@ -16,6 +29,7 @@ const About = () => {
 							{Skills.map((item) => {
 								return (
 									<img
+										key={item.id}
 										src={item.image}
 										style={{ maxWidth: '75px' }}
 										className="me-4"
@@ -24,10 +38,10 @@ const About = () => {
 							})}
 						</div>
 						<b>Education and Certificates</b>
-						<div className="shadow rounded p-3 mt-4">
+						<div className="border p-3 mt-4">
 							Python Programming Essentials Course
 						</div>
-						<div className="shadow rounded p-3 my-4">
+						<div className="border p-3 my-4">
 							CCNA: Switching, Routing, and Wireless Essentials
 						</div>
 					</div>
@@ -41,7 +55,7 @@ const About = () => {
 					/>
 				</Col>
 			</Row>
-		</div>
+		</motion.div>
 	);
 };
 
