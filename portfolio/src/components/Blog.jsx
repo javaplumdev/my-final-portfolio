@@ -21,7 +21,20 @@ const Blog = () => {
 							key={item.vlogID}
 							className="d-flex justify-content-center"
 						>
-							<motion.div whileHover={{ scale: 1.1 }}>
+							<motion.div
+								whileHover={{ scale: 1.1 }}
+								whileInView="visible"
+								initial="hidden"
+								viewport={{ once: true }}
+								transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 4 }}
+								variants={{
+									visible: {
+										opacity: 1,
+										y: 0,
+									},
+									hidden: { opacity: 0, y: -100 },
+								}}
+							>
 								<a
 									href={item.link}
 									target="_blank"

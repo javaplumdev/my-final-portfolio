@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 // React router
 import { useParams } from 'react-router-dom';
 // Data
@@ -7,20 +7,29 @@ import { RecentProjects } from '../data/Data';
 // Bootstrap
 import { Row, Col } from 'react-bootstrap';
 import { BsCodeSlash, BsGlobe2 } from 'react-icons/bs';
+// Context
+import { ContextVariable } from '../context/context-config';
+// Framer motion
+import { motion } from 'framer-motion';
 
 const ProjectContentPage = () => {
 	const { id } = useParams();
-
+	const { AnimateHeroText } = useContext(ContextVariable);
 	const proj = ProjectsData.filter((item) => item.projectID === parseInt(id));
 
 	return (
 		<div>
 			<div>
 				<Row>
-					<Col md="8">
+					<Col md="10">
 						{proj.map((item) => {
 							return (
-								<div key={item.projectID}>
+								<motion.div
+									key={item.projectID}
+									variants={AnimateHeroText}
+									initial="initial"
+									animate="animate"
+								>
 									<img
 										src={item.image2}
 										className="w-100"
@@ -56,11 +65,11 @@ const ProjectContentPage = () => {
 											</a>
 										</div>
 									</div>
-								</div>
+								</motion.div>
 							);
 						})}
 					</Col>
-					<Col md="4">
+					<Col md="2">
 						<p>Proj details</p>
 					</Col>
 				</Row>

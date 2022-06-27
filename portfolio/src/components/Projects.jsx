@@ -21,12 +21,24 @@ const Projects = () => {
 			</div>
 
 			{/* Projects */}
+
 			<div>
-				<div className="d-flex flex-wrap  justify-content-center ">
+				<motion.div className="d-flex flex-wrap  justify-content-center ">
 					{RecentProjects.map((item) => {
 						return (
 							<motion.div
 								whileHover={{ scale: 1.1 }}
+								whileInView="visible"
+								initial="hidden"
+								viewport={{ once: true }}
+								transition={{ ease: [0.6, 0.01, -0.05, 0.95], duration: 2 }}
+								variants={{
+									visible: {
+										opacity: 1,
+										y: 0,
+									},
+									hidden: { opacity: 0, y: -100 },
+								}}
 								key={item.projectID}
 								className="m-3 border p-4"
 								style={{ maxWidth: '320px' }}
@@ -53,7 +65,7 @@ const Projects = () => {
 							</motion.div>
 						);
 					})}
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	);
