@@ -29,7 +29,9 @@ const Navbar = () => {
 				<p>About</p>
 			</Link>
 
-			<p>Contacts</p>
+			<Link to="/contacts" className="text-decoration-none">
+				<p>Contact</p>
+			</Link>
 		</motion.div>
 	);
 };

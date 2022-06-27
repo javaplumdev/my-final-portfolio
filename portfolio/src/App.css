@@ -68,3 +68,18 @@ span {
 .project {
 	width: 320px;
 }
+
+.see-all {
+	border: 1px solid #00c3ff;
+	border-radius: 10px;
+}
+
+.see-all:hover {
+	background-color: #00c3ff;
+	border-radius: 10px;
+	color: white;
+}
+
+.blog:hover {
+	box-shadow: #00c3ff 0px 5px 15px;
+}

@@ -22,6 +22,7 @@ const Blog = () => {
 							className="d-flex justify-content-center"
 						>
 							<motion.div
+								className="blog"
 								whileHover={{ scale: 1.1 }}
 								whileInView="visible"
 								initial="hidden"

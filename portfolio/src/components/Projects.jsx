@@ -16,7 +16,7 @@ const Projects = () => {
 				</div>
 
 				<Link to="/projectpage" className="text-decoration-none">
-					<b className="d-flex justify-content-end">See all</b>
+					<b className="p-2 see-all d-flex justify-content-end">See all</b>
 				</Link>
 			</div>
 

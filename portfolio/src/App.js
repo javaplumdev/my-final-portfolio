@@ -9,6 +9,7 @@ import ProjectPage from './components/ProjectPage';
 import ProjectContentPage from './components/ProjectContentPage';
 import About from './components/About';
 import Footer from './components/Footer';
+import Contacts from './components/Contacts';
 // Bootstrap
 import { Container } from 'react-bootstrap';
 // React Router
@@ -37,6 +38,7 @@ function App() {
 						<Route path="/about" element={<About />} />
 						<Route path="/projectpage" element={<ProjectPage />} />
 						<Route path="/projectpage/:id" element={<ProjectContentPage />} />
+						<Route path="/contacts" element={<Contacts />} />
 					</Routes>
 					<Footer />
 				</Container>

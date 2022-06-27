@@ -20,7 +20,7 @@ const Hero = () => {
 					Brings performance <span>experience</span> and nice looking{' '}
 					<span>user interfaces</span>.
 				</h1>
-				<button className="button my-5">Send a message</button>
+				{/* <button className="button my-5">Send a message</button> */}
 
 				<div className="d-flex align-items-center">
 					<p className="me-3">Scroll down</p>
@@ -36,7 +36,7 @@ const Hero = () => {
 				</div>
 			</motion.div>
 
-			{/* <motion.div
+			<motion.div
 				className="circle"
 				animate={{ x: [0, 30, -50, 0], y: [0, 30, -50, 0] }}
 				transition={{
@@ -44,7 +44,7 @@ const Hero = () => {
 					repeat: Infinity,
 					repeatType: 'reverse',
 				}}
-			></motion.div> */}
+			></motion.div>
 			<img src={PatternPad} className="patternpad w-100" />
 		</>
 	);

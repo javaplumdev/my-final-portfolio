@@ -69,9 +69,7 @@ const ProjectContentPage = () => {
 							);
 						})}
 					</Col>
-					<Col md="2">
-						<p>Proj details</p>
-					</Col>
+					<Col md="2"></Col>
 				</Row>
 			</div>
 		</div>
