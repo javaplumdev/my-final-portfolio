@@ -31,6 +31,8 @@ function App() {
 									<Hero />
 									<Projects />
 									<Blog />
+									<About />
+									<Contacts />
 								</>
 							}
 						/>

@@ -53,6 +53,7 @@ const Projects = () => {
 										{item.tech.map((tech) => {
 											return (
 												<small
+													key={item.projectID}
 													className="m-1 p-1 text-white rounded"
 													style={{ backgroundColor: '#00c3ff' }}
 												>

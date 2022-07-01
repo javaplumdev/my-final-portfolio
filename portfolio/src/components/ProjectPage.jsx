@@ -14,8 +14,8 @@ const ProjectPage = () => {
 				{ProjectsData.map((item) => {
 					return (
 						<motion.div
-							whileHover={{ scale: 1.1 }}
 							key={item.projectID}
+							whileHover={{ scale: 1.1 }}
 							className="m-3"
 							whileInView="visible"
 							initial="hidden"

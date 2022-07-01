@@ -6,34 +6,66 @@ import { Link } from 'react-router-dom';
 // Context
 import { useContext } from 'react';
 import { ContextVariable } from '../context/context-config';
+import { BsList } from 'react-icons/bs';
 
-const Navbar = () => {
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+
+const NavbarComponent = () => {
 	const { AnimateHeroText } = useContext(ContextVariable);
 
 	return (
-		<motion.div
-			variants={AnimateHeroText}
-			initial="initial"
-			animate="animate"
-			className="py-3 justify-content-between d-flex"
-		>
-			<Link to="/" className="text-decoration-none">
-				<b>Charlito Mecarez Jr.</b>
-			</Link>
+		// <motion.div
+		// 	variants={AnimateHeroText}
+		// 	initial="initial"
+		// 	animate="animate"
+		// 	className="navbar py-3 justify-content-between d-flex "
+		// >
 
-			<Link to="/projectpage" className="text-decoration-none">
-				<p>Projects</p>
-			</Link>
+		// </motion.div>
 
-			<Link to="/about" className="text-decoration-none">
-				<p>About</p>
-			</Link>
+		<Navbar bg="white" expand="lg" className="sticky-top position-sticky">
+			<Container>
+				<Navbar.Brand>
+					<Link to="/" className="text-decoration-none">
+						<b>Mecarez Jr.</b>
+					</Link>
+				</Navbar.Brand>
+				<Navbar.Toggle aria-controls="basic-navbar-nav">
+					{' '}
+					<BsList />{' '}
+				</Navbar.Toggle>
 
-			<Link to="/contacts" className="text-decoration-none">
-				<p>Contact</p>
-			</Link>
-		</motion.div>
+				<Navbar.Collapse id="basic-navbar-nav">
+					<Nav className="mx-auto">
+						<Link
+							id="RouterNavLink"
+							to="/about"
+							className="me-5 text-decoration-none"
+						>
+							<p>About</p>
+						</Link>
+
+						<Link
+							id="RouterNavLink"
+							to="/projectpage"
+							className="me-5 text-decoration-none"
+						>
+							<p>Projects</p>
+						</Link>
+					</Nav>
+					<Nav>
+						<Link
+							id="RouterNavLink"
+							to="/contacts"
+							className="me-5 text-decoration-none"
+						>
+							<p>Contact</p>
+						</Link>
+					</Nav>
+				</Navbar.Collapse>
+			</Container>
+		</Navbar>
 	);
 };
 
-export default Navbar;
+export default NavbarComponent;

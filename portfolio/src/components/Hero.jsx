@@ -45,7 +45,7 @@ const Hero = () => {
 					repeatType: 'reverse',
 				}}
 			></motion.div>
-			<img src={PatternPad} className="patternpad w-100" />
+			{/* <img src={PatternPad} className="patternpad w-100" /> */}
 		</>
 	);
 };

@@ -15,14 +15,12 @@ import 'react-vertical-timeline-component/style.min.css';
 const About = () => {
 	const { AnimateHeroText } = useContext(ContextVariable);
 
-	console.log(AnimateHeroText);
-
 	return (
 		<motion.div
 			variants={AnimateHeroText}
 			initial="initial"
 			animate="animate"
-			style={{ marginTop: '2em' }}
+			style={{ marginTop: '8em' }}
 		>
 			<h1 className="fw-bold">About</h1>
 			<Row className="mt-5 d-flex justify-content-center ">
@@ -65,13 +63,10 @@ const About = () => {
 				<VerticalTimeline lineColor="#00769a">
 					<VerticalTimelineElement
 						className="vertical-timeline-element--work"
-						date="2011 - present"
 						iconStyle={{ background: '#00769a', color: '#fff' }}
 					>
-						<h3 className="vertical-timeline-element-title">
-							Creative Director
-						</h3>
-						<h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+						<h3 className="vertical-timeline-element-title">College</h3>
+
 						<p>
 							Creative Direction, User Experience, Visual Design, Project
 							Management, Team Leading
@@ -79,13 +74,12 @@ const About = () => {
 					</VerticalTimelineElement>
 					<VerticalTimelineElement
 						className="vertical-timeline-element--work"
-						date="2010 - 2011"
 						iconStyle={{ background: '#00769a', color: '#fff' }}
 					>
-						<h3 className="vertical-timeline-element-title">Art Director</h3>
-						<h4 className="vertical-timeline-element-subtitle">
-							San Francisco, CA
-						</h4>
+						<h3 className="vertical-timeline-element-title">
+							Senior high school
+						</h3>
+
 						<p>
 							Creative Direction, User Experience, Visual Design, SEO, Online
 							Marketing
@@ -93,24 +87,10 @@ const About = () => {
 					</VerticalTimelineElement>
 					<VerticalTimelineElement
 						className="vertical-timeline-element--work"
-						date="2008 - 2010"
 						iconStyle={{ background: '#00769a', color: '#fff' }}
 					>
-						<h3 className="vertical-timeline-element-title">Web Designer</h3>
-						<h4 className="vertical-timeline-element-subtitle">
-							Los Angeles, CA
-						</h4>
-						<p>User Experience, Visual Design</p>
-					</VerticalTimelineElement>
-					<VerticalTimelineElement
-						className="vertical-timeline-element--work"
-						date="2006 - 2008"
-						iconStyle={{ background: '#00769a', color: '#fff' }}
-					>
-						<h3 className="vertical-timeline-element-title">Web Designer</h3>
-						<h4 className="vertical-timeline-element-subtitle">
-							San Francisco, CA
-						</h4>
+						<h3 className="vertical-timeline-element-title">High school</h3>
+
 						<p>User Experience, Visual Design</p>
 					</VerticalTimelineElement>
 				</VerticalTimeline>

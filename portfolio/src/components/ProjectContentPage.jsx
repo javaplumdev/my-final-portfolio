@@ -6,7 +6,8 @@ import { ProjectsData } from '../data/Data';
 import { RecentProjects } from '../data/Data';
 // Bootstrap
 import { Row, Col } from 'react-bootstrap';
-import { BsCodeSlash, BsGlobe2 } from 'react-icons/bs';
+import { BsCodeSlash, BsGlobe2, BsList } from 'react-icons/bs';
+
 // Context
 import { ContextVariable } from '../context/context-config';
 // Framer motion
@@ -53,14 +54,14 @@ const ProjectContentPage = () => {
 										</div>
 										<div className="d-flex flex-wrap">
 											<button className="button m-2">
-												<BsCodeSlash size={20} />
-												View code
+												<BsCodeSlash size={20} className="me-2" />
+												<small className="text-white">View code</small>
 											</button>
 
 											<a href={item.link} target="_blank">
 												<button className="button m-2">
-													<BsGlobe2 size={20} />
-													Live demo
+													<BsGlobe2 size={20} className="me-2" />
+													<small className="text-white">Live demo</small>
 												</button>
 											</a>
 										</div>
